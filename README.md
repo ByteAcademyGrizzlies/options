@@ -142,15 +142,27 @@ Note that as the option goes deeper and deeper into the money, its own intrinsic
 #### Risk Control (Hedging)
 Options are often used to hedge the risk related to the underlying instrument. This is typically done by producers or consumers of commodities to lock the price in the future at which the commodity can be traded.
 
-eg. An Oil company would Buy a Put option on the price of Oil at $50 on June 18th. 
+eg. An Oil company would Buy a Put option on the price of Oil at $70 on June 18th. 
 
-This give the company the right to sell Oil at $30 regardless of the price of Oil on June 18th.
-Note that safer the bet the trader wants to make with the option the more expensive it gets. Given the price of Oil today, purchasing a Put Option for a strike price of $50 would be very expensive indeed.
+This give the company the right to sell Oil at a minimum of $70 regardless of the price of Oil on June 18th.
+Note that safer the bet the trader wants to make with the option the more expensive it gets. Given the price of Oil today, purchasing a Put Option for a strike price of $70 would be very expensive indeed.
 
 Reference: http://www.bloomberg.com/news/articles/2016-02-09/oil-drillers-exposed-in-three-way-hedges-as-crude-dips-below-30
 
+```
+The trade has three parts. First, one option capped the best price Callon could get at $65 a barrel (Short Call).
+Selling the right to profit if prices rise offsets the cost of protecting against a decline. The second piece established 
+a floor price of $55, a guaranteed minimum that Callon would get paid even if oil fell below that point (Long Put).
+By itself, this kind of trade, called a collar, would’ve ensured that Callon received $25 a barrel protection when oil is trading at $30.
+
+However, Callon added a third element by selling a put option, sometimes called a subfloor, at $40 a barrel (Short Put). 
+Below that point, Callon essentially forfeits part of its protection. Instead of pocketing $55, the company is only entitled
+to the difference between the floor and that subfloor, or $15 a barrel in this case. At $30, Callon will realize $45 a barrel,
+$10 a barrel less than it would’ve received with a traditional collar.
+```
+
 eg. An airline company would Buy a Call Option on the price of Oil at $30 by June 18th
-This would allow the airline to lock in the trade at the current price level of oil, essentially guarding against Oil going back up by June
+This would allow the airline to lock in the trade at a price level of $30, essentially guarding against Oil going up by June
 
 #### Income Generation
 Option can often be used to generate Income. This is definitely risky, but is done nonetheless
