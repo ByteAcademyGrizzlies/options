@@ -4,23 +4,23 @@ from View import PayoffPlotter
 class Strategies:
 
     @staticmethod
-    def LongPutStrategy():
+    def LongPutStrategy(option_object):
         pass
 
     @staticmethod
-    def LongCallStrategy():
+    def LongCallStrategy(option_object):
         pass
 
     @staticmethod
-    def ShortPutStrategy():
+    def ShortPutStrategy(option_object):
         pass
 
     @staticmethod
-    def ShortCallStrategy():
+    def ShortCallStrategy(option_object):
         pass
 
     @staticmethod
-    def LongUnderlying():
+    def LongUnderlying(option_object):
         pass
 
 
