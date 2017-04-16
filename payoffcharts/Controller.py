@@ -3,6 +3,14 @@ from View import PayoffPlotter
 
 class Strategies:
 
+    def __init__(self):
+        self.strategy_map = {
+            'buy_call': LongCallStrategy(),
+            'buy_put': LongPutStrategy(),
+            'sell_call': ShortCallStrategy(),
+            'sell_put': ShortPutStrategy()
+        }
+
     @staticmethod
     def LongPutStrategy(option_object):
         pass
